@@ -57,8 +57,6 @@ a {
   padding-left: 16px;
   padding-right: 16px;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
   /* max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
@@ -140,8 +138,14 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
-  padding: 24px 0;
+  padding: 16px 0;
   position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .full-logo {
+    padding: 24px 0;
+  }
 }
 
 .studio-color-one {
@@ -205,6 +209,15 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 768px) {
+  .mail {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+}
+
 .address-list {
   display: flex;
   gap: 40px;
@@ -259,6 +272,8 @@ a {
   padding-bottom: 188px;
   max-width: 1440px;
   margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -268,19 +283,92 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mobile/Dark-bg@mobile-1x.png);
+}
+
+@media only screen (max-width: 320px) and (min-resolution: 192dpi) {
+  .logo-name-color {
+    padding-top: 112;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/Dark-bg@mobile-2x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-name-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/Dark-bg@tablet-1x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .logo-name-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/Dark-bg@tablet-2x.png);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .logo-name-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop/people-office\ 1@heder-1px.png);
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .logo-name-color {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop/people-office\ 1@heder-1px.png);
+  }
 }
 
 .logo-name {
   display: block;
   color: #ffffff;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-bottom: 48px;
   justify-self: center;
+  margin-bottom: 72px;
+  width: 216px;
+  height: 160px;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-name {
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    max-width: 496px;
+    margin-bottom: 36px;
+    width: 496px;
+    height: 120px;
+    line-height: 1.07;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .logo-name {
+    margin-bottom: 48px;
+  }
 }
 
 .button-style {
@@ -374,29 +462,30 @@ a {
 
 .our-advantages-title {
   margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  color: #2e2f42;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-advantages-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-align: left;
+    margin-bottom: 8px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
   .our-advantages-title {
     font-weight: 500;
     font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .our-advantages-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-align: center;
-    margin-bottom: 8px;
   }
 }
 
@@ -409,29 +498,6 @@ a {
 
 .advantages-icon {
   display: none;
-  /* width: 264px;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px; */
-}
-
-@media only screen and (min-width: 768px) {
-  .advantages-icon {
-    /* width: 264px;
-    height: 112px;
-    border: 1px solid #8e8f99;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px; */
-  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -590,6 +656,13 @@ a {
 
   width: 288px;
   height: 280px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-img {
+    width: 360px;
+    height: 300px;
+  }
 }
 
 .portfolioadds {
@@ -933,13 +1006,13 @@ a {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -960,20 +1033,10 @@ a {
   padding: 72px 24px 24px 24px;
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%) scale(1);
     width: 408px;
     min-height: 584px;
-    background-color: #fcfcfc;
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
   }
 }
 
