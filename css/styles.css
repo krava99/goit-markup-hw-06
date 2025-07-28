@@ -673,14 +673,19 @@ a {
 }
 
 .portfolio-img {
-  /* width: 360px;
-  height: 300px; */
-
-  width: 288px;
+  display: block;
+  width: 100%;
   height: 280px;
 }
 
 @media only screen and (min-width: 768px) {
+  .portfolio-img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
   .portfolio-img {
     width: 360px;
     height: 300px;
@@ -696,7 +701,13 @@ a {
 
 @media only screen and (min-width: 768px) {
   .portfolioadds {
+    display: flex;
+
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
 }
 
